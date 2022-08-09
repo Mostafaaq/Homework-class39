@@ -22,11 +22,30 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this object
+  [
+    Beer: 3,
+    Chips: 2.3,
+    Bread: 1.75.
+    Water: 2.3,
+    Fruits:5.88,
+  
+  ]
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(Total = 0) {
   // TODO replace this comment with your code
+  let item = 0;
+
+  for (let i in cartForParty) {
+    if (cartForParty.hasOwnProperty(i)) {
+      item = item + cartForParty[i];
+    }
+  }
+  return Total:${item}
 }
+console.log(calculateTotalPrice());
+
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
